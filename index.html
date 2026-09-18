@@ -609,15 +609,15 @@
         </div>
         <div>
             <dt>Off-spec</dt>
-            <dd>16</dd>
+            <dd>15</dd>
         </div>
         <div>
             <dt>Off-spec call sites</dt>
-            <dd>149 <span>/ 1072</span></dd>
+            <dd>146 <span>/ 1072</span></dd>
         </div>
         <div>
             <dt>From one weight line</dt>
-            <dd>123 <span>call sites</span></dd>
+            <dd>120 <span>call sites</span></dd>
         </div>
     </dl>
 
@@ -1220,13 +1220,13 @@
     <section>
         <div class="sec-head">
             <h2>Right style, wrong weight</h2>
-            <span class="tally">7 variants &middot; 123 uses</span>
+            <span class="tally">6 variants &middot; 120 uses</span>
         </div>
         <p class="sec-sub">
             These map cleanly onto published styles by name and size, so they
             are not extra variants. But <code>headingBase</code> sets
             <code>fontWeight: 500</code> and every published Montserrat style is
-            SemiBold. One line in the theme drives all seven. Weight can be
+            SemiBold. One line in the theme drives all six. Weight can be
             overridden per node by a Figma variable, so confirm against the real
             frames before changing it.
         </p>
@@ -1479,72 +1479,7 @@
             </figure>
         </div>
 
-        <div class="row g-c">
-            <p class="name">
-                h4MediumGray <span class="pill pill-dupe">duplicate</span>
-            </p>
-            <div class="uses"><b>3</b><small>uses</small></div>
-            <p class="why">
-                Re-declares weight 500 explicitly and adds a grey. Ignoring
-                colour it is exactly <code>h4</code>.
-            </p>
-            <p class="where">
-                <span class="where-k">Find it at</span>
-                <a
-                    class="where-url"
-                    href="https://www.safestays.com/stays"
-                    target="_blank"
-                    rel="noopener"
-                    >www.safestays.com/stays</a
-                >
-                <span class="where-d"
-                    >The empty-state message shown when a table returns no
-                    rows.</span
-                >
-            </p>
-            <p class="sample">
-                <span
-                    style="
-                        font-family: 'Montserrat', sans-serif;
-                        font-weight: 500;
-                        font-size: 22.78px;
-                        opacity: 0.65;
-                    "
-                    >Guest details</span
-                >
-            </p>
-            <span class="cmp">
-                <span class="cmp-cell"
-                    ><span class="cmp-k">In code</span
-                    ><span class="cmp-v"
-                        >Montserrat <span class="delta">500</span> &middot;
-                        22.78px</span
-                    ></span
-                >
-                <span class="cmp-cell cmp-target"
-                    ><span class="cmp-k">Figma &middot; Heading/04</span
-                    ><span class="cmp-v"
-                        >Montserrat <span class="delta">600</span> &middot;
-                        22.78px</span
-                    ></span
-                >
-            </span>
-            <figure class="shot sb">
-                <img
-                    src="data:image/png;base64,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"
-                    alt="The h4MediumGray variant rendered through the app theme"
-                    width="335"
-                    height="84"
-                />
-                <figcaption>
-                    <code>Montserrat</code> &middot; <code>500</code> &middot;
-                    <code>22.784px</code> / <code>27.68px</code> &middot;
-                    <code>#49577A</code>.
-                </figcaption>
-            </figure>
-        </div>
-
-        <div class="row g-c">
+                <div class="row g-c">
             <p class="name">title</p>
             <div class="uses"><b>1</b><small>uses</small></div>
             <p class="why">
